@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Noman Mushtaq Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Noman Mushtaq</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/main\ pic.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Noman Mushtaq</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Civil Engineering Student  ',
+						'Aspiring Structural Engineer  ',
+						'AI Enthusiastic   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Final Year Student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/c/HusnainRehmat395shakargarh" class="btn btn-primary py-3 px-4" target="_blank">YouTube</a>
+							<a href="https://github.com/Husnainrehmat395" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="Nomi.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Noman Mushtaq</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Trainee Site Engineer, Structure Design Engineer , Research Assistant </span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Years 0 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Islamabad Capital Territory, Pakistan</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>FEM Tools </span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Programing Languages</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>BIM modelling</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Engineering Software</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning and AI</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Soft Skills</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<div class="justify-text">
+									<p>
+										I am an expert in applying Finite Element Analysis to complex civil engineering challenges, particularly in 
+										simulating and optimizing structural behavior under dynamic loading. My work involves using computational 
+										techniques to enhance structural performance; by integrating Artificial Intelligence models and computer vision 
+										techniques, my ultimate goal is to refine design processes and improve predictive accuracy in structural health 
+										monitoring, ensuring structures are innovative, efficient, resilient, and secure against any loading condition.
+									</p>
+								</div>
+
+
+								
+									<ul class="about-info mt-4 px-md-0 px-2">
+									 <li class="d-flex"><span>Profile:</span> <span>Civil Engineering, AI, Structural Health Monitoring</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Civil Engineering, Structural Design, AI Integration, Machine Learning in Engineering, Finite Element Analysis</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Civil Engineering</span></li>
+									<li class="d-flex"><span>Technical Skills: </span>
+										<ul class="ml-2">
+											<li><strong>Programming Languages:</strong> Python (NumPy, Pandas, Matplotlib), C++, MATLAB (for structural analysis), OpenSeesPy</li>
+											<li><strong>Engineering Software:</strong> Abaqus, ETABS, SAP2000, AutoCAD, Autodesk Revit, Primavera P6, PLanSwift, Plaxis, LS-Dyna, SketchUp</li>
+											<li><strong>Machine Learning/AI:</strong> Scikit-learn, TensorFlow, PyTorch (for AI applications in structural health monitoring)</li>
+											<li><strong>Other Skills:</strong> Microsoft Office Suite (Word, PowerPoint, Excel) </li>
+										</ul>
+									</li>
+									<li class="d-flex"><span>Soft Skills:</span> <span>Problem-solving, Time management, Communication, Teamwork, Self-motivation, Result oriented, public speaking, and Leadership. </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Studying , Travelling , Music </span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Urdu, Punjabi</span></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="6">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/noman-mushtaq-168758308" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Aspiring Civil Engineer specializing in advanced computational methods such as Finite Element Analysis and AI-driven solutions for structural design. 
+				Skilled in machine learning, data analysis, and structural health monitoring, with a focus on optimizing performance and resilience under dynamic loading.
+				Seeking opportunities to apply innovative approaches and drive efficiency in real-world engineering challenges.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2021-2025</span>
+					<h2>Bachelor of Civil Engineering</h2>
+					<span class="position">
+						<a href="https://nutech.edu.pk/" target="_blank" style="text-decoration: none; color: inherit;">
+							National University of Technology Islamabad Pakistan (NUTECH)
+						</a>
+					</span>
+					<p class="mt-4">Final CGPA: 2.56 </p>
+				</div>
+			</div>
+
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2021</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">
+						<a href="https://www.educators.edu.pk/" target="_blank" style="text-decoration: none; color: inherit;">
+							Construction Technology Training Institute (CTTi) </span>
+						</a>
+    					<p class="mt-4">Grade: 2495 / 3500</p>
+    				</div>
+				</div>
+    		</div>
+
+		<div class="row">
+			<h1 class="big-4">Relevant Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2024-Present</span>
+						<h2>Undergraduate research Experiences</h2>
+						<span class="position">
+						<a href="https://nutech.edu.pk/" target="_blank" style="text-decoration: none; color: inherit;">
+							National University of Technology Islamabad Pakistan (NUTECH)
+						</a> </span>
+						<p class="mt-4">I gained research experience during my study at NUTECH in multiple projects alongside esteemed faculty members, focusing on Structural Engineering, Geotechnical Engineering, and the application of computer vision in Civil Engineering. Here are a few key responsibilities I had in research projects.
+							<ul>
+								<li>Developed finite element models for tunnel structures using fiber modeling and OpenSeesPy to analyze shear behavior and blast load effects.</li>
+								<li>Finite Element Analysis using Abaqus is being conducted to thoroughly explore the local damage and overall failure of reinforced concrete beams subjected to eccentric impact loading. </li>
+								<li>Investigated shear strength variations, energy dissipation trends using Finite Element Model, and the efficiency of the Strut-and-Tie Method in medium-strength reinforced concrete deep beams.</li>
+								<li>Developed a computer vision system for automated crack detection and classification, utilizing OpenCV for crack measurement, training machine learning models (SVM and CNNs) for accurate classification, and building an application for real-time crack analysis.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Summer Internships july-september 2025</span>
+					<h2>Site Engineer</h2>
+					<span class="position">
+						<a href="https://www.behance.net/bukharimarketi" target="_blank" style="text-decoration: none; color: inherit;">
+							Bukhari Associate Builder
+						</a> 
+						& 
+						<a href="https://acespak.com/contactus/" target="_blank" style="text-decoration: none; color: inherit;">
+							Site Enigneer Internee At NLC Islamabad
+						</a>
+					</span>
+
+						<p class="mt-4">During my summer break from university, I completed an internship in each year to gain relevant site experience. Here are the details of my summer internship: 
+							<ul>
+								<li>Site Experience at Nha: My first two summer internships were completed on-site, where my responsibilities included supervising construction activities, material estimation, and quality control to ensure adherence to project specifications and safety standards.</li>
+								<li>Site Engieer Internship at Nlc: After gaining site experience, I completed an internship at a structural design office, where I Collaborated with senior structural Engineering and applied Finite Element Analysis (FEA) tools such as ETABS and SAP2000, along with structural design principles, using the American concrete Institute ACI 318-19 and American Society of Civil Engineer ASCE 7-16 codes loading condition used in real-world projects.</li>
+								<li>Designed residential and high-rise buildings, performing dynamic analysis using the response spectrum and pushover method to ensure structural integrity under Dynamics loading conditions.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Curriculum Vitae</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+  
+
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Below are some projects related to Civil Engineering.</p>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <!-- Project 1: Topology Optimization & Structural Analysis of SFRC Beam -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/p1.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#">ASSESSMENT OF LINEAR SEISMIC SITE AMPLIFICATION FOR SHALLOW BEDROCK SITES IN ISLAMABAD,
+ PAKISTAN </a>
+            </h3>
+            <p>
+              I am currently exploring seismic site amplification for shallow bedrock sites in Islamabad, building a tailored model
+ through linear site response analysis. I’m diving deep into geotechnical data and computational tools to ensure
+ accurate predictions, while validating my work against established models for reliable seismic hazard assessment. This
+ project is sharpening my skills in data analysis, technical writing, and applying earthquake engineering concepts to
+ real-world challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2: Computer Vision for Automated Crack Detection -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#">Computer Vision for Automated Crack Detection</a>
+            </h3>
+            <p>
+              Developed a system using OpenCV and machine learning (from SVM to CNNs) to detect and classify cracks with real-time analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3: AI-Based Incident Monitoring System -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#">AI-Based Incident Monitoring System</a>
+            </h3>
+            <p>
+              Designed a real-time traffic monitoring system using YOLO11, integrating camera streams and automated alerts for vehicle incidents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row d-flex justify-content-center">
+      <!-- Project 4: Optimized Structural Design & Comparative Analysis -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#">Optimized Structural Design &amp; Comparative Analysis</a>
+            </h3>
+            <p>
+              Conducted a comprehensive study comparing ETABS and manual calculations using MATLAB and Excel, achieving a 6% cost reduction and optimized design per ACI 318-19 guidelines.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5: Time & Cost Bid for a 1 Kanal Residential Construction Project -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="#">Time &amp; Cost Bid for a 1 Kanal Residential Construction Project</a>
+            </h3>
+            <p>
+              Prepared a comprehensive cost, quantity, and time bid for a 1 Kanal residential project in Westridge, Rawalpindi using Punjab MRS/MES rates, leveraging PlanSwift and MS Excel for quantity estimations, scheduling, and cost analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Online Certification</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Volunteer Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Husnainrehmat395" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><a href="https://www.google.com/maps?q=Islamabad+Capital+Territory,+Pakistan" target="_blank">Islamabad Capital Territory, Pakistan</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 92 3325789232</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:noumann500a@gmail.com">noumann500a@gmail.com</a></p> 
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://docs.google.com/document/d/1jQElqkrPvJLZDSOppPPS1CpEr_1NJOKUQTY_HoG63eU/edit?usp=sharing" target="_blank">Download Resume</a></p> 
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbZdIIvStwlWLrRY1F3i85D9HI1BTH0nDfXgjHMQybuVut-g/viewform?usp=dialog" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on</li>
+					  <li class="ftco-animate">
+						<a href="" target="_blank">
+						  <span class="icon-youtube"></span>
+						</a>
+					  </li>
+					  <li class="ftco-animate">
+						<a href="https://www.linkedin.com/in/noman-mushtaq-168758308/" target="_blank">
+						  <span class="icon-linkedin"></span>
+						</a>
+					  </li>  
+					  <li class="ftco-animate">
+						<a href="https://x.com/" target="_blank">
+						  <span class="icon-twitter"></span>
+						</a>
+					  </li>
+					  <li class="ftco-animate">
+						<a href="https://www.facebook.com/malix.nouman" target="_blank">
+						  <span class="icon-facebook"></span>
+						</a>
+					  </li>
+					  <li class="ftco-animate">
+						<a href="https://www.instagram.com/nomi5601/" target="_blank">
+						  <span class="icon-instagram"></span>
+						</a>
+					  </li>
+					</ul>
+
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Nomi</a>
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
